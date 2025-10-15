@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import axios from 'axios';
 import SearchBarr from "./Components/SearchBarr";
 import WeatherCards from "./Components/WeatherCards";
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className='min-h-screen flex flex-col items-center justify-center bg-blue-100 relative overflow-hidden'>
-      <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
+      <video autoPlay loop muted playsInline preload="auto" className="absolute top-0 left-0 w-full h-full object-cover">
         <source src={Cvideo} type="video/mp4" />
       </video>
 
